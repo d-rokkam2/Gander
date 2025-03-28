@@ -22,6 +22,10 @@
     <h2>Add Flight</h2>
     <form method="POST" action="/add_flight">
       <div class="mb-3">
+        <label for="pilot_name" class = "form-label">Pilot Name</label>
+        <input type="text" class="form-control" id="pilot_name" name="pilot_name" required>
+      </div>
+      <div class="mb-3">
         <label for="flight_number" class="form-label">Flight Number</label>
         <input type="text" class="form-control" id="flight_number" name="flight_number" required>
       </div>

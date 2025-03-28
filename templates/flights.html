@@ -15,6 +15,7 @@
           <li class="nav-item"><a class="nav-link active" href="/flights">Flights</a></li>
           <li class="nav-item"><a class="nav-link" href="/maintenance">Maintenance</a></li>
           <li class="nav-item"><a class="nav-link" href="/crew">Crew</a></li>
+          <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
         </ul>
       </div>
     </div>
@@ -25,6 +26,7 @@
     <table class="table table-striped">
       <thead>
         <tr>
+          <th>Pilot Name</th>
           <th>Flight Number</th>
           <th>Departure Time</th>
           <th>Origin</th>
@@ -35,6 +37,7 @@
       <tbody>
         {% for flight in flights %}
         <tr>
+          <td>{{ flight['pilot_name'] }}</td>
           <td>{{ flight['flight_number'] }}</td>
           <td>{{ flight['departure_time'] }}</td>
           <td>{{ flight['origin'] }}</td>
